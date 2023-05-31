@@ -3,7 +3,7 @@ import deeplake
 #establish connection and store data
 ds = deeplake.empty('hub://<ORGANIZATION_NAME>/gene_expression_dataset')
 
-gene_expression_data = ds.create_tensor('gene_expression', htype='array', dtype='float32')
+gene_expression_data = ds.create_tensor('gene_expression', htype='array', dtype='float32') 
 
 import numpy as np
 
